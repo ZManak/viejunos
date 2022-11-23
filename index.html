@@ -14,7 +14,7 @@
             <fieldset>
             <legend>TÚ</legend>
             <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" required><br>
+            <input type="text" id="name" name="name" autofocus required><br>
             <label for="first-name">Apellidos:</label>
             <input type="text" id="first-name" name="first-name" required><br>
             <label for="age">Edad:</label>
@@ -34,7 +34,7 @@
             <label for="email">Correo electrónico:</label>
             <input type="email" id="email" name="email"><br>
             <label for="tel">Teléfono:</label>
-            <input type="tel" id="tel" name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required><br>  
+            <input type="tel" id="tel" name="tel" pattern="[0-9]{9}" required><br>  
             <input type="submit" value="Submit">
             <input type="reset">
             </fieldset>
@@ -43,7 +43,7 @@
         <form action="">
             <h1>Los Ladronzuelos de bicicletas</h1>
           <fieldset>
-            <label for="time"> Fecha y Hora</label>
+            <label for="time">Fecha y Hora</label>
              <input type="datetime-local" id="time" name="time">
             
              <label for="colorBike">Color of the steal Bike</label>
@@ -63,16 +63,17 @@
               <option value="R.1,5m"> Carreras: Metro y medio</option>
               <option value="R.redSkin"> Carreras: Fluorescente edition</option>
               <option value="R.grups"> Carreras: Grupitors</option>
-            </select>
+            </select><br>
 
-            <selector name="accesories" id="accesories" multiple>
-                <option value="lilWheels">Ruedines</selector>option>
+            <label for="accesories">Accesorios (usa Ctrl+Clic para seleccionar varios)</label><br>
+            <select name="accesories" id="accesories" size="6" multiple>
+                <option value="lilWheels">Ruedines</option>
                 <option value="stickers">Pegatinas</option>
                 <option value="lilBasket">Cestita</option>
                 <option value="inflator">Bomba de aire</option>
                 <option value="bikeBell">Timbre</option>
                 <option value="focus">Foco</option>
-            </selector>
+            </select><br>
             
             <label for="brand">Marca:</label>
             <input list="brand" id="brand-choice" name="brand-choice">
@@ -99,6 +100,9 @@
                 <option value="cervélo">cervélo</option>
                 <option value="argon">argon</option>
             </datalist>
+            <br>
+            <input type="submit" value="Submit">
+            <input type="reset">
             </fieldset>
          </form>
     </main>
