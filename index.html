@@ -4,29 +4,104 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>El Club Viejuner</title>
 </head>
+
 <body>
-    <form action="/action_page.php" taget="_blank" method="post">
-        <label for="name">Nombre:</label>
-        <input type="text" required>
-        <label for="firs-name">Apellidos:</label>
-        <input type="text" required>
-        <label for="age">Edad:</label>
-        <input type="text">
-        <section class="sexo">
-        <label for="sex">Hombre</label>
-        <input type="radio" id="sex" name="sex" value="man">
-        <label for="sex">Mujer</label>
-        <input type="radio" id="sex" name="sex" value="woman">
-    </section> 
-    <input type="checkbox">
-    <label for=""></label>
-    <input type="multy">
-    </form>
-    <form action="">
-        <label for="day"></label>
-        
-    </form>
+    <main>
+        <h1>El Club Viejuner</h1>
+        <form id="datos-personales" action="/action_page.php" taget="_blank" method="post">
+            <fieldset>
+            <legend>TÚ</legend>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="first-name">Apellidos:</label>
+            <input type="text" id="first-name" name="first-name" required><br>
+            <label for="age">Edad:</label>
+            <input type="number" id="age" name="age" min="1" required><br>
+            <label for="sex">Hombre</label>
+            <input type="radio" id="sex" name="sex" value="man" required>
+            <label for="sex">Mujer</label>
+            <input type="radio" id="sex" name="sex" value="woman"><br>
+            <input type="checkbox" id="viejo-si" name="viejo-si" value="viejo-si" required>
+            <label for="viejo-si">Me siento viejuner</label><br>
+            <label for="about">Escribe algo sobre ti:</label><br>
+            <textarea form="datos-personales" rows="4" cols="50" required>Escribe algo...</textarea><br>
+            </fieldset>
+            
+            <fieldset>
+            <legend>TUS CIRCUNSTANCIAS</legend>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email"><br>
+            <label for="tel">Teléfono:</label>
+            <input type="tel" id="tel" name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required><br>  
+            <input type="submit" value="Submit">
+            <input type="reset">
+            </fieldset>
+        </form>
+
+        <form action="">
+            <h1>Los Ladronzuelos de bicicletas</h1>
+          <fieldset>
+            <label for="time"> Fecha y Hora</label>
+             <input type="datetime-local" id="time" name="time">
+            
+             <label for="colorBike">Color of the steal Bike</label>
+             <input type="color" id="colorBike" name="colorBike">
+            
+             <label for="price"> Price of the Bike</label>
+             <input type="range" id="price" name="price">
+           
+    
+            <select name="typeBike" id="typeBike">
+              <option value="W.Oldman"> Paseo: Señorial</option>
+              <option value="W.noPoor"> Paseo: Anti-plebeyos</option>
+              <option value="W.arrogance"> Paseo: Por encima del hombro</option>
+              <option value="M.Gamusinos"> Montaña: Cazadora de gamusinos</option>
+              <option value="M.smellFlowers"> Montaña: Hueleflores premium</option>
+              <option value="M.fangoLovers"> Montaña: Fango lovers</option>
+              <option value="R.1,5m"> Carreras: Metro y medio</option>
+              <option value="R.redSkin"> Carreras: Fluorescente edition</option>
+              <option value="R.grups"> Carreras: Grupitors</option>
+            </select>
+
+            <selector name="accesories" id="accesories" multiple>
+                <option value="lilWheels">Ruedines</selector>option>
+                <option value="stickers">Pegatinas</option>
+                <option value="lilBasket">Cestita</option>
+                <option value="inflator">Bomba de aire</option>
+                <option value="bikeBell">Timbre</option>
+                <option value="focus">Foco</option>
+            </selector>
+            
+            <label for="brand">Marca:</label>
+            <input list="brand" id="brand-choice" name="brand-choice">
+            <datalist id="brand">
+                <option value="specialized">specialized</option>
+                <option value="trek">trek</option>
+                <option value="merida">merida</option>
+                <option value="scott">scott</option>
+                <option value="giant">giant</option>
+                <option value="cube">cube</option>
+                <option value="lapierre">lapierre</option>
+                <option value="orbea">orbea</option>
+                <option value="cannondale">cannondale</option>
+                <option value="bmc">bmc</option>
+                <option value="canyon">canyon</option>
+                <option value="look">look</option>
+                <option value="protek">protek</option>
+                <option value="megamo">megamo</option>
+                <option value="pinarello">pinarello</option>
+                <option value="bianchi">bianchi</option>
+                <option value="bh">bh</option>
+                <option value="factor">factor</option>
+                <option value="ghost">ghost</option>
+                <option value="cervélo">cervélo</option>
+                <option value="argon">argon</option>
+            </datalist>
+            </fieldset>
+         </form>
+    </main>
+    
 </body>
 </html>
