@@ -1,0 +1,16 @@
+* {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+.answer {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25 px;
+}
+.responses {
+    font-size: 22 px;
+}
+h1{
+    color: brown;
+}
+h2 {
+    color: black;
+}

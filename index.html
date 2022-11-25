@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title> El club viejuner </title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Club Viejuner</title>
+    <link rel="stylesheet" href="./styles/style.css">
+
 </head>
 
 <body>
@@ -43,16 +45,18 @@
         <form action="">
             <h1>Los Ladronzuelos de bicicletas</h1>
           <fieldset>
+            <legend>¿CÓMO ERA TU BICI?</legend>
             <label for="time">Fecha y Hora</label>
-             <input type="datetime-local" id="time" name="time">
+             <input type="datetime-local" id="time" name="time"><br>
             
-             <label for="colorBike">Color of the steal Bike</label>
-             <input type="color" id="colorBike" name="colorBike">
+             <label for="colorBike">Color of the stolen Bike</label>
+             <input type="color" id="colorBike" name="colorBike"><br>
             
              <label for="price"> Price of the Bike</label>
-             <input type="range" id="price" name="price">
+             <input type="range" id="price" name="price"
+                    min="50" max="1500" value="100" step="10"><br>
            
-    
+            <label for="typeBike">Tipo de bici:</label>
             <select name="typeBike" id="typeBike">
               <option value="W.Oldman"> Paseo: Señorial</option>
               <option value="W.noPoor"> Paseo: Anti-plebeyos</option>
